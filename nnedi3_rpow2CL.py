@@ -1,5 +1,6 @@
 import vapoursynth as vs
 
+core = vs.core
 
 def nnedi3_rpow2CL(clip, rfactor=2, width=None, height=None, correct_shift=True,
                  kernel="spline36", nsize=0, nns=3, qual=None, etype=None, pscrn=None,
@@ -22,7 +23,6 @@ def nnedi3_rpow2CL(clip, rfactor=2, width=None, height=None, correct_shift=True,
         nnedi3_args (mixed): For help with nnedi3 args
             refert to nnedi3 documentation.
     """
-    core = vs.get_core()
 
     # Setting up variables
 
